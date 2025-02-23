@@ -1,0 +1,25 @@
+*{
+    background-color: #1E1E1E ;
+    font-family:Arial;
+    color: #D3D3D3 ;
+}
+.input-text{
+    display: flex;
+    justify-content: center;
+}
+.input{
+    margin-top: 8%;
+    font-size: medium;
+    line-height: 1.5;
+    width: 700px;
+    outline: none;
+    border: none;
+    word-wrap: break-word;
+    overflow-wrap:break-word;
+    font-size: 65px;
+    font-weight: bold;
+}
+.input:empty::before{
+    content: attr(data-placeholder);
+    color: #646464;
+}
