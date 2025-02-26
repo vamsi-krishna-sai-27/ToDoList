@@ -28,7 +28,7 @@ h1{
     border: 1px solid ;
     border-radius: 3px;
 }
-.add-button{
+button{
     padding:10px 15px;
     background-color: rgb(40, 167, 69);
     border: none;
@@ -37,7 +37,7 @@ h1{
     border-radius: 4px;
 }
 
-.add-button:hover{
+button:hover{
     background-color: rgb(39, 124, 57);
 }
 .reset-button{
@@ -50,4 +50,26 @@ h1{
 }
 .reset-button:hover{
     background-color: rgb(175, 43, 56);
+}
+
+.list-to-do{
+    list-style-type: none;;
+    padding: 0;   
+}
+
+.list-to-do li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.list-to-do li:last-child{
+    border-bottom: none;
+}
+
+.complete{
+    text-decoration: line-through;
+    color: #888;
 }
